@@ -1,12 +1,13 @@
 import numpy as np
 import cv2
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture()
 
 # Set new resolution
 cap.set(3, 320)
 cap.set(4, 480)
 while(True):
+
     # Capture frame-by-frame
     ret, frame = cap.read() # returns true/false depending whether frame is read correctly
 
